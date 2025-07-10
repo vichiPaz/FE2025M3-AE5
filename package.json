@@ -1,0 +1,24 @@
+{
+  "name": "fe2025m3-ae5",
+  "version": "1.0.0",
+  "description": "Watch Store es un proyecto de front-end desarrollado como parte del bootcamp frontend. Este sitio web responsive implementa Bootstrap para crear una tienda de relojes con una interfaz moderna y adaptable a diferentes dispositivos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vichiPaz/FE2025M3-AE5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vichiPaz/FE2025M3-AE5/issues"
+  },
+  "homepage": "https://github.com/vichiPaz/FE2025M3-AE5#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
