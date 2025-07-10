@@ -32,6 +32,10 @@ body {
   object-fit: cover;
 }
 
+.product__card {
+  width: 18rem;
+}
+
 .product__card--img {
   height: 350px;
   object-fit: cover;
