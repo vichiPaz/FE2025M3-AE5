@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Store</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/09bf171868.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+        </button>
+</form>
+</div>
+</div>
+</nav>
+<div class="alert__sticky" id="liveAlertPlaceholder"></div>
+
+    <main class="container">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active">
+            <img
+              src="https://i.pinimg.com/736x/34/7c/4f/347c4f64b608c49213580fc3a6e5cfc8.jpg"
+              class="d-block w-100 carousel__img"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/736x/d9/c1/a7/d9c1a708768c6226692fc50666728a3e.jpg"
+              class="d-block w-100 carousel__img"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/736x/6f/9b/9f/6f9b9f5914675a6e740bae39e4359b21.jpg"
+              class="d-block w-100 carousel__img"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <div class="product">
+        <div class="product__title py-5">
+          <h2 class="text-center pt-5">Productos</h2>
+        </div>
+        <div
+          class="product__gallery w-100 d-flex justify-content-center flex-column flex-lg-row"
+        >
+          <div class="card mx-5 h-50 my-3 product__card" style="width: 18rem">
+            <img
+              src="https://i.pinimg.com/1200x/63/0b/89/630b898c01070e2fb34919ce1f89b9d6.jpg"
+              class="card-img-top product__card--img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Reloj Seiko</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card mx-5 h-50 my-3 product__card" style="width: 18rem">
+            <img
+              src="https://i.pinimg.com/1200x/28/f4/17/28f417ddd58d866f5cf6f498ae1b39b0.jpg"
+              class="card-img-top product__card--img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Reloj Breda</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+          <div class="card mx-5 h-50 my-3 product__card" style="width: 18rem">
+            <img
+              src="https://i.pinimg.com/736x/50/5b/d0/505bd02dee71b0e1b09b25db9c162d59.jpg"
+              class="card-img-top product__card--img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Reloj Philip Persio</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__contact">
+        <div class="form__contact--title pt-5">
+      <h2 class="mb-4 text-center">Contáctanos</h2>
+      <form id="formulario-contacto" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            Nunca le pasaremos tu email a nadie.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="newsletter" />
+          <label class="form-check-label" for="newsletter">
+            Suscribirte a nuestro Newsletter
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      </div>
+    </main>
+ <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--text">
+          Derechos reservados a quienes correspondan, &copy; 2025
+        </p>
+        <ul class="footer__social">
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              blank="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/"
+              blank="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
