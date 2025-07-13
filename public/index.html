@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Watch Store</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../src/custom.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/bootstrap.bundle.min.js" defer></script>
     <script src="../js/script.js"></script>
@@ -15,7 +18,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-1 py-lg-2">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Watch Store</a>
         <button
@@ -71,29 +74,29 @@
 </div>
 </div>
 </nav>
-<div class="alert__sticky" id="liveAlertPlaceholder"></div>
+<div class="alert__sticky p-0" id="liveAlertPlaceholder"></div>
 
     <main class="container">
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active carousel__img">
             <img
               src="https://i.pinimg.com/736x/34/7c/4f/347c4f64b608c49213580fc3a6e5cfc8.jpg"
-              class="d-block w-100 carousel__img"
+              class="d-block w-100 "
               alt="..."
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carousel__img">
             <img
               src="https://i.pinimg.com/736x/d9/c1/a7/d9c1a708768c6226692fc50666728a3e.jpg"
-              class="d-block w-100 carousel__img"
+              class="d-block w-100"
               alt="..."
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carousel__img ">
             <img
               src="https://i.pinimg.com/736x/6f/9b/9f/6f9b9f5914675a6e740bae39e4359b21.jpg"
-              class="d-block w-100 carousel__img"
+              class="d-block w-100"
               alt="..."
             />
           </div>
@@ -137,7 +140,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-outline-primary">Comprar</a>
             </div>
           </div>
           <div class="card mx-lg-5 mx-auto h-50 my-3 product__card">
@@ -152,7 +155,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-outline-primary">Comprar</a>
             </div>
           </div>
           <div class="card mx-lg-5 mx-auto h-50 my-3 product__card">
@@ -167,7 +170,7 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card’s content.
               </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-outline-primary">Comprar</a>
             </div>
           </div>
         </div>
@@ -179,13 +182,13 @@
       <form id="formulario-contacto" novalidate>
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" required />
+          <input type="text" class="form-control border-primary" id="nombre" required />
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+          <label for="email" class="form-label ">Email</label>
           <input
             type="email"
-            class="form-control"
+            class="form-control border-primary"
             id="email"
             aria-describedby="emailHelp"
             required
@@ -196,10 +199,10 @@
         </div>
         <div class="mb-3">
           <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+          <textarea class="form-control border-primary" id="mensaje" rows="3" required></textarea>
         </div>
         <div class="form-check mb-3">
-          <input type="checkbox" class="form-check-input" id="newsletter" />
+          <input type="checkbox" class="form-check-input border-primary" id="newsletter" />
           <label class="form-check-label" for="newsletter">
             Suscribirte a nuestro Newsletter
           </label>

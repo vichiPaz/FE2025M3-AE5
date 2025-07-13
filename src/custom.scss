@@ -1,8 +1,43 @@
+@import "../node_modules/bootstrap/scss/functions";
+
 $primary: rgb(28, 46, 32);
-$bg-body-tertiary: rgb(182, 193, 169);
+$secondary: rgb(207, 215, 209);
+$tertiary: rgb(154, 122, 35);
+$background: rgb(249, 249, 249);
 $font-family-base: "Poppins", sans-serif;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/bootstrap/scss/functions";
+$enable-rounded: false;
+
+$body-bg: $background;
+$watch-color: rgb(50, 51, 63);
+$body-color: $watch-color;
+$btn-primary-bg: $primary;
+
+$spacer: 2rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+);
+
+.navbar {
+  background-color: $primary !important;
+  color: $secondary !important;
+}
+
+.product__card {
+  background-color: $secondary;
+  color: $primary;
+  border: 1px solid $primary;
+}
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";

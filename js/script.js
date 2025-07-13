@@ -21,7 +21,7 @@ function validarCampo(id) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regex.test(value)) {
       valido = false;
-      msg = "Email inválido.";
+      msg = "Este campo no cumple los requisitos de email.";
     }
   }
 

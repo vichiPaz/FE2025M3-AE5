@@ -12,8 +12,8 @@
 
 .alert__sticky {
   position: sticky;
-  top: 56px;
-  z-index: 1;
+  top: 3.5rem;
+  z-index: 10;
 }
 
 .main {
@@ -24,8 +24,13 @@
 }
 
 .carousel__img {
-  height: 400px;
+  height: 40rem;
   object-fit: cover;
+}
+.carousel__img img {
+  height: 40rem;
+  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .product__card {
@@ -47,22 +52,24 @@
 .footer__content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 0.5rem;
   padding: 1rem;
 }
 .footer__content .footer__social {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 .footer__content .footer__social a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #676767;
+  color: #000;
 }
 .footer__content .footer__social a:hover {
-  color: #000;
+  color: #676767;
 }
 
 @media (min-width: 768px) {
@@ -73,7 +80,7 @@
   .carousel__img img {
     height: 600px;
     object-fit: cover;
-    object-position: center;
+    object-fit: scale-down;
   }
 
   .product__card--img {
