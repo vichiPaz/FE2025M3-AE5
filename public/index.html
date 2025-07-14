@@ -83,6 +83,7 @@
 
     <!-- main  -->
     <main class="container">
+      <!-- carousel -->
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -126,7 +127,7 @@
           <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
-
+      <!-- products  -->
       <div class="product pt-5 pt-lg-7">
         <div class="product__title mt-5">
           <h2 class="text-center p-3">Productos Destacados</h2>
@@ -181,11 +182,12 @@
           </div>
         </div>
       </div>
-
+      <!-- contactForm -->
       <div class="form__contact--title pt-4 pt-lg-6 px-lg-10">
-        <h2 class="mb-4 text-center">Contáctanos</h2>
-        <form id="formulario-contacto" class="row p-3 g-3" validate>
-          <div class="px-0">
+        <h2 class="mb-1 text-center">Contáctanos</h2>
+        <div class="px-lg-10"></div>
+        <form id="formulario-contacto" class="row p-3 g-3 g-lg-2" validate>
+          <div class="px-lg-1 col-lg">
             <label for="nombre" class="form-label">Nombre</label>
             <input
               type="text"
@@ -194,7 +196,7 @@
               required
             />
           </div>
-          <div class="px-0">
+          <div class="px-lg-1 col-lg">
             <label for="email" class="form-label">Email</label>
             <input
               type="email"
@@ -207,7 +209,7 @@
               Nunca le pasaremos tu email a nadie.
             </div>
           </div>
-          <div class="px-0">
+          <div class="px-lg-1">
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea
               class="form-control border-primary"
@@ -216,14 +218,14 @@
               required
             ></textarea>
           </div>
-          <div class="form-check">
+          <div class="form-check py-lg-3 px-auto">
             <input
               type="checkbox"
-              class="form-check-input border-primary"
+              class="form-check-input border-primary mx-auto"
               id="newsletter"
             />
-            <label class="form-check-label" for="newsletter">
-              Suscribirte a nuestro Newsletter
+            <label class="form-check-label px-2" for="newsletter">
+              Suscríbete a nuestro Newsletter
             </label>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>

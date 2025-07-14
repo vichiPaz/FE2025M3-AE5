@@ -62,6 +62,24 @@ $color-contrast-light: $secondary;
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// @mixin tablet($height) {
+//   @media (min-width: 768px) {
+//     height: $height;
+//   }
+// }
+
+// @mixin desktop($height) {
+//   @media (min-width: 992px) {
+//     height: $height;
+//   }
+// }
+
+@mixin tablet() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
 .alert {
   display: flex;
   align-items: center;
@@ -98,13 +116,13 @@ $color-contrast-light: $secondary;
 #carouselExampleFade .carousel-item {
   height: 35rem;
 
-  @media (min-width: 768px) {
-    // Tablet (md)
+  //   @include tablet(55rem);
+  //   @include desktop(45rem);
+
+  @include tablet() {
     height: 55rem;
   }
-
-  @media (min-width: 992px) {
-    // Desktop (lg)
+  @include desktop() {
     height: 45rem;
   }
 }
