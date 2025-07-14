@@ -3,9 +3,10 @@
 //base variables
 $primary: rgb(28, 46, 32);
 $secondary: rgb(207, 215, 209);
-$tertiary: rgb(154, 122, 35);
+$tertiary: rgb(176, 188, 119);
 $background: rgb(249, 249, 249);
 $font-family-base: "Poppins", sans-serif;
+$carousel-control-color: $primary;
 
 //color scheme
 $body-bg: $background;
@@ -53,18 +54,13 @@ $btn-padding-y: 0.5rem;
 $btn-padding-x: 2rem;
 $color-contrast-light: $secondary;
 
+//transitions
+// $carousel-transition-duration: transform 6s ease-in-out;
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $secondary;
-}
 
 .alert {
   display: flex;
@@ -83,10 +79,75 @@ $color-contrast-light: $secondary;
 .navbar {
   background-color: $background !important;
   color: $primary;
+  border-bottom: 1px solid $primary;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  color: $secondary !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: $tertiary !important;
+  color: $primary !important;
+}
+
+#carouselExampleFade,
+#carouselExampleFade .carousel-inner,
+#carouselExampleFade .carousel-item {
+  height: 35rem;
+
+  @media (min-width: 768px) {
+    // Tablet (md)
+    height: 55rem;
+  }
+
+  @media (min-width: 992px) {
+    // Desktop (lg)
+    height: 45rem;
+  }
+}
+
+#carouselExampleFade .carousel-item img {
+  height: 100%;
+  object-fit: scale-down;
+  object-position: center;
+  display: block;
 }
 
 .product__card {
   background-color: $background;
   color: $primary;
   border: 1px solid $primary;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-top: 1px solid $secondary;
+  margin-top: 10rem;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.footer__content .footer__social {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.footer__content .footer__social a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $primary;
+}
+.footer__content .footer__social a:hover {
+  color: $tertiary;
 }
