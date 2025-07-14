@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Watch Store</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../src/custom.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/bootstrap.bundle.min.js" defer></script>
-    <script src="../js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/09bf171868.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-1 py-lg-2">
@@ -82,7 +81,7 @@
           <div class="carousel-item active carousel__img">
             <img
               src="https://i.pinimg.com/736x/34/7c/4f/347c4f64b608c49213580fc3a6e5cfc8.jpg"
-              class="d-block w-100 "
+              class="d-block w-100"
               alt="..."
             />
           </div>
@@ -121,14 +120,14 @@
         </button>
       </div>
 
-      <div class="product">
-        <div class="product__title pt-5">
-          <h2 class="text-center p-3">Productos</h2>
+      <div class="product pt-5 pt-lg-7">
+        <div class="product__title mt-5">
+          <h2 class="text-center p-3">Productos Destacados</h2>
         </div>
         <div
-          class="product__gallery w-100 d-flex justify-content-center flex-column flex-lg-row"
+          class="w-100 d-flex justify-content-center flex-column flex-md-column flex-lg-row g-md-1 product__gallery"
         >
-          <div class="card mx-lg-5 mx-auto h-50 my-3 product__card">
+          <div class="card mx-lg-2 mx-md-5 mx-auto h-50 my-3 product__card">
             <img
               src="https://i.pinimg.com/1200x/63/0b/89/630b898c01070e2fb34919ce1f89b9d6.jpg"
               class="card-img-top product__card--img"
@@ -143,7 +142,7 @@
               <a href="#" class="btn btn-outline-primary">Comprar</a>
             </div>
           </div>
-          <div class="card mx-lg-5 mx-auto h-50 my-3 product__card">
+          <div class="card mx-lg-2 mx-md-5 mx-auto h-50 my-3 product__card">
             <img
               src="https://i.pinimg.com/1200x/28/f4/17/28f417ddd58d866f5cf6f498ae1b39b0.jpg"
               class="card-img-top product__card--img"
@@ -158,7 +157,7 @@
               <a href="#" class="btn btn-outline-primary">Comprar</a>
             </div>
           </div>
-          <div class="card mx-lg-5 mx-auto h-50 my-3 product__card">
+          <div class="card mx-lg-2 mx-md-5 mx-auto h-50 my-3 product__card">
             <img
               src="https://i.pinimg.com/736x/50/5b/d0/505bd02dee71b0e1b09b25db9c162d59.jpg"
               class="card-img-top product__card--img"
@@ -176,15 +175,15 @@
         </div>
       </div>
 
-      <div class="form__contact mx-3">
-      <div class="form__contact--title pt-5">
+      <div class="form__contact mx-0 pt-5 pt-lg-7">
+      <div class="form__contact--title pt-4 pt-lg-6">
       <h2 class="mb-4 text-center">Contáctanos</h2>
-      <form id="formulario-contacto" novalidate>
-        <div class="mb-3">
+      <form id="formulario-contacto" class="row p-3 g-3" validate>
+        <div class="px-0">
           <label for="nombre" class="form-label">Nombre</label>
           <input type="text" class="form-control border-primary" id="nombre" required />
         </div>
-        <div class="mb-3">
+        <div class="px-0">
           <label for="email" class="form-label ">Email</label>
           <input
             type="email"
@@ -197,11 +196,11 @@
             Nunca le pasaremos tu email a nadie.
           </div>
         </div>
-        <div class="mb-3">
+        <div class="px-0">
           <label for="mensaje" class="form-label">Mensaje</label>
           <textarea class="form-control border-primary" id="mensaje" rows="3" required></textarea>
         </div>
-        <div class="form-check mb-3">
+        <div class="form-check">
           <input type="checkbox" class="form-check-input border-primary" id="newsletter" />
           <label class="form-check-label" for="newsletter">
             Suscribirte a nuestro Newsletter

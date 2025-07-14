@@ -21,7 +21,7 @@ function validarCampo(id) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regex.test(value)) {
       valido = false;
-      msg = "Este campo no cumple los requisitos de email.";
+      msg = "El Email no es válido.";
     }
   }
 
@@ -29,7 +29,7 @@ function validarCampo(id) {
     field.classList.add("is-valid");
     field.classList.remove("is-invalid");
     mostrarAlerta(
-      `${field.previousElementSibling.innerText} válido.`,
+      `El ${field.previousElementSibling.innerText} es válido.`,
       "success"
     );
   } else {

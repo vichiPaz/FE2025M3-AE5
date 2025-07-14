@@ -12,8 +12,9 @@
 
 .alert__sticky {
   position: sticky;
-  top: 3.5rem;
   z-index: 10;
+  top: 3rem;
+  padding: 0;
 }
 
 .main {
@@ -24,17 +25,29 @@
 }
 
 .carousel__img {
-  height: 40rem;
+  /* border: 1px solid #676767; */
+  margin: 0;
+  padding: 0;
+  height: 25rem;
   object-fit: cover;
 }
 .carousel__img img {
-  height: 40rem;
+  height: 25rem;
   object-fit: cover;
   object-fit: scale-down;
 }
 
+.product__gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 1rem;
+}
+
 .product__card {
-  width: 18rem;
+  width: auto;
 }
 
 .product__card--img {
@@ -74,11 +87,11 @@
 
 @media (min-width: 768px) {
   .carousel__img {
-    height: 600px;
+    height: 35rem;
     object-fit: cover;
   }
   .carousel__img img {
-    height: 600px;
+    height: 35rem;
     object-fit: cover;
     object-fit: scale-down;
   }
@@ -88,6 +101,27 @@
     object-fit: cover;
   }
   .form__contact {
-    padding: 0 18rem;
+    padding: 0 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel__img {
+    height: 40rem;
+    object-fit: cover;
+  }
+  .carousel__img img {
+    height: 40rem;
+    object-fit: cover;
+    object-fit: scale-down;
+  }
+
+  .product__card--img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .form__contact {
+    padding: 0 25%;
   }
 }
